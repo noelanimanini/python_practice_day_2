@@ -38,3 +38,32 @@ elif 35 > result > 30:
   print(f"you are obese")
 elif result > 35: 
   print(f"you are clinically obese")
+# 🚨 Don't change the code below 👇
+print("Welcome to Python Pizza Deliveries!")
+size = input("What size pizza do you want? S, M, or L ")
+add_pepperoni = input("Do you want pepperoni? Y or N ")
+extra_cheese = input("Do you want extra cheese? Y or N ")
+# 🚨 Don't change the code above 👆
+
+#Write your code below this line 👇
+counter = 0
+if size == "S":
+  counter += 15
+  if add_pepperoni == "Y":
+    counter += 2
+    if extra_cheese == "Y":
+      counter += 1
+elif size == "M":
+  counter += 20
+  if add_pepperoni == "Y":
+    counter += 2
+    if extra_cheese == "Y":
+      counter += 1
+elif size == "L":
+  counter += 25
+  if add_pepperoni == "Y":
+    counter += 2
+    if extra_cheese == "Y":
+      counter += 1
+print(f"Your total comes to ${counter}")
+
