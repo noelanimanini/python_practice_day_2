@@ -7,6 +7,16 @@ class Linkedlist:
   def __init__(self):
     self.head = None
     self.last_node = None
+  
+  def to_list(self):
+    l = []
+    if self.head is None:
+      return l
+    node = self.head
+    while node:
+      l.append(node.data)
+      node = node.next_node
+    return l
 
   def print_ll(self):
     ll_string = ""
@@ -44,15 +54,3 @@ class Linkedlist:
     # else: 
       self.last_node.next_node = Node(data, None)
       self.last_node = self.last_node.next_node
-
-ll = Linkedlist()
-ll.insert_beginning("data")
-ll.insert_beginning("data")
-ll.insert_beginning("data")
-ll.insert_beginning("data")
-ll.insert_beginning("data")
-ll.insert_beginning("data")
-
-ll.insert_at_end("end")
-ll.insert_at_end("end")
-ll.print_ll()
