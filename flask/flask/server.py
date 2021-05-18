@@ -69,7 +69,7 @@ def get_all_users_descending():
       })
   return jsonify(all_users_ll.to_list()), 200
 
-# something is wrong with the ascending
+# something is wrong with the ascending 1:22:25
 @app.route("/user/ascending_id", methods=["GET"])
 def create_all_users_ascending():
     users = User.query.all()
