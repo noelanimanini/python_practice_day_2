@@ -1,5 +1,7 @@
 #Step 1 
 import random
+import hangman_words as words 
+import hangman_art as art
 
 stages = ['''
   +---+
@@ -59,8 +61,8 @@ stages = ['''
 ''']
 
 
-word_list = ["aardvark", "baboon", "camel"]
-
+word_list = words.word_list
+print(art.logo)
 randomize = input(f"Welcome! Please press 'd' to randomize the word list, {word_list} ")
 
 if randomize:
