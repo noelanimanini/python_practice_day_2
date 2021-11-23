@@ -1,6 +1,6 @@
 # check to see if the number given is a prime number
 def prime_checker(number):
-  if number % 1 == 0 and number % 2 == 0:
+  if number % 1 == 0 and number % number == 0:
     print(True)
   else: 
     print(False)
